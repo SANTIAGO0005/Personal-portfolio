@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="js/scrollreveal.js"></script>
+    <script src="https://kit.fontawesome.com/e75bb457c7.js" crossorigin="anonymous"></script>
+    <title>Personal PortFolio Website</title>
+</head>
+<body>
+<div id="header">
+        <nav class="nav">
+            <img src="icons/Santiag3.png" class="logo">
+            <ul id="sidemenu" class="menu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+    <div class="container">
+        <div class="header-text">
+            <p>Developer FULLSTACK</p>
+            <h1>hi, I'm <span> Santiago</span><br/> From Colombia</h1>
+        </div>
+    </div>
+</div>
+
+<!-- ------------about----------------- -->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum reprehenderit at placeat eligendi libero, sequi molestias fugit debitis esse. Sapiente dolor labore delectus, voluptatem quisquam ex quas minima iste maiores?</p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skill')">Skills</p>
+                    <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links"onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skill">
+                    <ul>
+                        <li><span>Devs/Django</span><br>Creacion de APIS REST</li>
+                        <li><span>Web Developer</span><br>Web app Development</li>
+                        <li><span>App Devloper</span><br>Bulding web apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Devs/Django</span><br>Creacion de APIS REST</li>
+                        <li><span>Web Developer</span><br>Web app Development</li>
+                        <li><span>PPPPPPP</span><br>Bulding web apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Devs/Django</span><br>Creacion de APIS REST</li>
+                        <li><span>Web Developer</span><br>Web app Development</li>
+                        <li><span>OOOOOOOOO</span><br>Bulding web apps</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------------skills------------------- -->
+<div id="skills">
+    <div class="container">
+        <h1 class="sub-title">Skills</h1>
+        <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero corrupti iusto sit alias quod illo. Facere culpa iste sit necessitatibus nulla obcaecati, neque mollitia dicta tenetur vel, modi consectetur. Doloremque.</p> 
+    </div>
+    <div class="list-icons">
+        
+        <ul>
+            <li class="l1"><a href=""><img src="icons/html-5.png" class="logos"></a></li>
+            <li class="l2"><a href=""><img src="icons/css-3 (1).png" class="logos"></a></li>
+            <li class="l3"><a href=""><img src="icons/js.png" class="logos"></a></li>
+            <li class="l4"><a href=""><img src="icons/sql-server.png" class="logos"></a></li>
+            <li class="l5"><a href=""><img src="icons/icons8-git.svg" class="logos"></a></li>
+            <li class="l6"><a href=""><img src="icons/python (1).png" class="logos"></a></li>
+            <li class="l7"><a href=""><img src="icons/icons8-django.svg" class="logos"></a></li>
+        </ul>
+        <ul class="ul-1">
+            <li class="l8"><a href=""><img src="icons/icons8-postgresql-144.svg" class="logos "></a></li>
+            <li class="l9"><a href=""><img src="icons/icons8-logo-de-mysql.svg" class="logos "></a></li>
+            <li class="l10"><a href=""><img src="icons/icons8-mongodb-a-cross-platform-document-oriented-database-program-96.png" class="logos "></a></li>
+        </ul>
+    </div>
+</div>
+<!-- ----------------services------------------- -->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore fugiat, totam rem numquam 
+                porro reprehenderit nulla blanditiis adipisci ratione! Molestiae magni dolores sed magnam illo 
+                aperiam corporis nisi aliquam soluta.</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>App Design</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore fugiat, totam rem numquam 
+                porro reprehenderit nulla blanditiis adipisci ratione! Molestiae magni dolores sed magnam illo 
+                aperiam corporis nisi aliquam soluta.</p>                
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-database"></i>
+                <h2>API REST</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore fugiat, totam rem numquam 
+                porro reprehenderit nulla blanditiis adipisci ratione! Molestiae magni dolores sed magnam illo 
+                aperiam corporis nisi aliquam soluta.</p>
+                <a href="#">learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------------portfolio------------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>the app connects you yo the talented poeple around the world
+                    Download it from play store.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>MarketSite App</h3>
+                    <p>the app connects you yo the talented poeple around the world
+                    Download it from play store.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>the app connects you yo the talented poeple around the world
+                    Download it from play store.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="" download class="btn a">See more</a>
+    </div>
+</div>
+
+<!-- ----------------contact------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>cifuentess938@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>+57 3042586103</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-twitter-square"></i></a>
+                    <a href=""><i class="fa fa-instagram"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                </div>
+                <a href="" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright Santiago.<i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+<div class="scrol"></div>
+<script src="js/about.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
