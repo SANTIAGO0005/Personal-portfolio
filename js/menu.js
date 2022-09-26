@@ -2,7 +2,7 @@
 let sidemeu = document.getElementById("sidemenu")
 
 const openmenu =()=>{
-    sidemeu.style.right = "0"
+    sidemeu.style.right = "0px"
 }
 const closemenu =()=>{
     sidemeu.style.right = "-200px"

@@ -18,7 +18,7 @@ html,body{
     background-image: url(../myBackground/background1.png);
     background-size: cover;
     background-attachment: fixed;
-    z-index: 998;
+    z-index: 8;
     background-position: center;
 }
 .container{
@@ -28,12 +28,12 @@ html,body{
 .nav{
     position: fixed;
     width: 100%;
-    height: 80px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 5px;
-    z-index: 999;
+    z-index: 9;
 }
 .nav.active{
     background: #010101;
@@ -45,6 +45,7 @@ html,body{
 }
 
 .logo{
+    
     padding: 15px 10%;
     font-size: 22px;
     font-weight: 100;
@@ -117,6 +118,7 @@ html,body{
     width: 350px;
     object-fit: cover;
     border-radius: 50%;
+    
 }
 .about-col-2{
     flex-basis: 60%;
@@ -166,26 +168,34 @@ html,body{
 }
 /* --------skills--------- */
 #skills{
-    padding: 30px 0;
+    margin-top: 10px;
+}
+.sub-title.sub2{
+    text-align: center;
 }
 .list-icons{
-    margin-top: 70px;
-    padding:  60px;
-}
-.list-icons ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    margin-top: 0px;
+    padding: 100px ;
+    padding-top: 4rem;
+    gap: 1rem;
+    grid-auto-rows: 5rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%,5rem),1fr));
     
 }
-.list-icons ul li{
+.list-icons a{
+    display: flex;
+    justify-content: center;
+}
+.list-icons a img{
     margin: 0 20px;
     list-style: none;
     transition: transform 0.5s;
+   
 }
 .p {
-    margin-top: 40px;
-    width: 60%;
+    margin-top: 10px;
+    width: 100%;
 }
 .logos{
     font-size: 22px;
@@ -193,13 +203,10 @@ html,body{
     width: 85px;
     height: 85px;
 }
-.ul-1{
-    margin-top: 30px;
-}
-.list-icons ul li a .logos{
+.list-icons a .logos{
     transition: transform 0.3s;
 }
-.list-icons ul li a .logos:hover{
+.list-icons a .logos:hover{
     transform: translateY(-12px)
 }
 
@@ -422,7 +429,7 @@ nav .fas{
         height: 100vh;
         padding-top: 50px;
         z-index: 2;
-        color: black;
+        
         transition: right 0.5s;
     }
     nav ul li{
@@ -440,12 +447,9 @@ nav .fas{
         left: 25px;
         cursor: pointer;
     }
-    .logo{
-        margin-left: 0;
-        width: 30%;
-        height: 60px;
-        padding: 0 0 ;
-
+    .logo{  
+        width: 18rem;
+        height: 5rem;
     }
     .sub-title{
         font-size: 40px;
