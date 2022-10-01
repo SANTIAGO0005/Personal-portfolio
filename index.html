@@ -4,26 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
     <link rel="stylesheet" href="styles/style.css">
-    <script src="js/scrollreveal.js"></script>
     <script src="https://kit.fontawesome.com/e75bb457c7.js" crossorigin="anonymous"></script>
     <title>Personal PortFolio Website</title>
 </head>
 <body>
-<div id="header">
+<div id="header" class="header">
         <nav class="nav">
             <img src="icons/Santiag3.png" class="logo">
             <ul id="sidemenu" class="menu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <i class="fas fa-times" onclick="closemenu()"></i>
+                <li><a class="a-fixed" href="#header">Home</a></li>
+                <li><a class="a-fixed" href="#about">About</a></li>
+                <li><a class="a-fixed" href="#skills">Skills</a></li>
+                <li><a class="a-fixed" href="#services">Services</a></li>
+                <li><a class="a-fixed" href="#portfolio">Portfolio</a></li>
+                <li><a class="a-fixed" href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick={closemenu()}></i>
             </ul>
-            <i class="fas fa-bars" onclick="openmenu()"></i>
+            <i class="fas fa-bars" onclick={openmenu()}></i>
         </nav>
     <div class="container">
         <div class="header-text">
@@ -182,22 +182,25 @@
                 <a href="" class="btn btn2">Download CV</a>
             </div>
             <div class="contact-right">
-                <form>
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="text" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
+                <form action="https://sheetdb.io/api/v1/r6uy6nzfp0ykq" method="post" id="sheetdb-form">
+                    <input name="data[Name]" type="text" placeholder="Your Name" required>
+                    <input  name="data[Email]" type="email" placeholder="Your Email" required>
+                    <textarea name="data[Message]" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Send</button>
                 </form>
+                <span id="msg"></span>
             </div>
         </div>
     </div>
     <div class="copyright">
-        <p>Copyright Santiago.<i class="fa-solid fa-heart"></i></p>
+        <p>Copyright Santiago.<i class="fas fa-heart"></i></p>
     </div>
 </div>
 <div class="scrol"></div>
 <script src="js/about.js"></script>
 <script src="js/menu.js"></script>
 <script src="js/index.js"></script>
+<script src="js/script-url.js"></script>
+<script src="js/animations.js"></script>
 </body>
 </html>

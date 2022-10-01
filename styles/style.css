@@ -5,21 +5,27 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
-
-html,body{
-    background: #080808;
-    color: #fff;
+html{
     scroll-behavior: smooth;
+}
+body{
+    background: black;
+    color: #fff;
+    
 }
 #header{
     background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
+    
+}
+.header{
     background-image: url(../myBackground/background1.png);
     background-size: cover;
     background-attachment: fixed;
     z-index: 8;
     background-position: center;
+    background-repeat: no-repeat;
 }
 .container{
     padding: 10px 10%;
@@ -28,12 +34,13 @@ html,body{
 .nav{
     position: fixed;
     width: 100%;
-    height: 60px;
+    height: 65px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 5px;
     z-index: 9;
+    
 }
 .nav.active{
     background: #010101;
@@ -45,23 +52,21 @@ html,body{
 }
 
 .logo{
-    
+    height: 90px;
     padding: 15px 10%;
     font-size: 22px;
     font-weight: 100;
     margin-top: 10px;
-    color: #080808;
+    
 }
-.menu{
-    display: flex;
-}
-.menu li{
+
+nav .menu li{
     margin: 10px;
     display: inline-block;
     list-style: none;
     text-transform: uppercase;
 }
-.menu li a{
+nav .menu li a{
     color:#fff;
     text-decoration: none;
     font-size: 18px;
@@ -168,6 +173,7 @@ html,body{
 }
 /* --------skills--------- */
 #skills{
+    padding: 80px 0;
     margin-top: 10px;
 }
 .sub-title.sub2{
@@ -212,7 +218,7 @@ html,body{
 
 /* -----------services----------- */
 #services{
-    padding: 30px 0;
+    padding: 70px 0;
 }
 .services-list{
     display: grid;
@@ -255,7 +261,7 @@ html,body{
 }
 /* ----------porfolio--------- */
 #portfolio{
-    padding: 50px 0;
+    padding: 70px 0;
 }
 .work-list{
     display: grid;
@@ -331,7 +337,9 @@ html,body{
 }
 
 /* ----------contact----------- */
-
+#contact{
+    padding: 70px 0
+}
 .contact-left{
     flex-basis: 35%;
 }
@@ -428,17 +436,18 @@ nav .fas{
         width: 200px;
         height: 100vh;
         padding-top: 50px;
-        z-index: 2;
-        
+        z-index: 4;
         transition: right 0.5s;
     }
-    nav ul li{
+    .nav ul li{
         display: block;
-        margin: 25px;
-        
+        margin: 25px;  
     }
-    nav ul li a{
+    .nav ul li .a-fixed{
         color: black;
+    }
+    .nav ul li a:hover{
+        color: #7c7c7c;
     }
 
     nav ul .fas{
@@ -446,6 +455,15 @@ nav .fas{
         top: 25px;
         left: 25px;
         cursor: pointer;
+    }
+    nav .fas.fa-times{
+        color: #010101;
+    }
+    nav .fas.fa-times:hover{
+        color: #7c7c7c;
+    }
+    nav .fas.fa-bars:hover{
+        color: #00fff5;
     }
     .logo{  
         width: 18rem;
@@ -484,5 +502,10 @@ nav .fas{
     .btn.a{
         margin-left: 65px;
     }
+}
+#msg{
+    color: #00fff5;
+    margin-top: -40px;
+    display: block;
 }
 
