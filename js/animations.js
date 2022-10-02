@@ -6,10 +6,10 @@
 
         // TO
 
-        gsap.to('.header', {
-            duration: 2,
-            x:-20, 
-        });
+        // gsap.to('.header', {
+        //     duration: 2,
+        //     x:-20, 
+        // });
         // OBJECT
 
         // let object = { value: 100 };
