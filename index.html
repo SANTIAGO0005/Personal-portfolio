@@ -7,6 +7,7 @@
     <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
     <link rel="stylesheet" href="styles/style.css">
+    <script src="js/scrollreveal.js"></script>
     <script src="https://kit.fontawesome.com/e75bb457c7.js" crossorigin="anonymous"></script>
     <title>Personal PortFolio Website</title>
 </head>
@@ -15,12 +16,12 @@
         <nav class="nav">
             <img src="icons/Santiag3.png" class="logo">
             <ul id="sidemenu" class="menu">
-                <li><a class="a-fixed" href="#header">Home</a></li>
-                <li><a class="a-fixed" href="#about">About</a></li>
-                <li><a class="a-fixed" href="#skills">Skills</a></li>
-                <li><a class="a-fixed" href="#services">Services</a></li>
-                <li><a class="a-fixed" href="#portfolio">Portfolio</a></li>
-                <li><a class="a-fixed" href="#contact">Contact</a></li>
+                <li><a class="a-fixed" href="#header" onclick={closemenu()}>Home</a></li>
+                <li><a class="a-fixed" href="#about" onclick={closemenu()}>About</a></li>
+                <li><a class="a-fixed" href="#skills" onclick={closemenu()}>Skills</a></li>
+                <li><a class="a-fixed" href="#services" onclick={closemenu()}>Services</a></li>
+                <li><a class="a-fixed" href="#portfolio" onclick={closemenu()}>Portfolio</a></li>
+                <li><a class="a-fixed" href="#contact" onclick={closemenu()}>Contact</a></li>
                 <i class="fas fa-times" onclick={closemenu()}></i>
             </ul>
             <i class="fas fa-bars" onclick={openmenu()}></i>
@@ -43,32 +44,32 @@
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum reprehenderit at placeat eligendi libero, sequi molestias fugit debitis esse. Sapiente dolor labore delectus, voluptatem quisquam ex quas minima iste maiores?</p>
+                <p>Hello ! I am SANTIAGO, a person autonomous and proactive, that advantage took me to take courses programming where you notice that I really love it. I found
+                    a way to express my
+                    creativity using logic.
+                    I want to join a team
+                    I work to enhance my
+                    technical skills as well as
+                    human, to follow
+                    challenging me every day.</p>
                 
                 <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skill')">Skills</p>
-                    <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links active-link"onclick="opentab('experience')">Experience</p>
                     <p class="tab-links"onclick="opentab('education')">Education</p>
                 </div>
-                <div class="tab-contents active-tab" id="skill">
+                
+                <div class="tab-contents active-tab" id="experience">
                     <ul>
-                        <li><span>Devs/Django</span><br>Creacion de APIS REST</li>
-                        <li><span>Web Developer</span><br>Web app Development</li>
-                        <li><span>App Devloper</span><br>Bulding web apps</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="experience">
-                    <ul>
-                        <li><span>Devs/Django</span><br>Creacion de APIS REST</li>
-                        <li><span>Web Developer</span><br>Web app Development</li>
-                        <li><span>PPPPPPP</span><br>Bulding web apps</li>
+                        <li><span>DEVS/ BACK-END|FRONT-END </span><br>lead a project for a market, in which it was developed with Python, SQL, Django REST, PostgreSQL, HTML, CSS, JavaScript.</li>
+                        <li><span>DEVS/ API</span><br>I developed an API for an E'Commerce with the technologies, Python, Django rest, MySQL, JWS.</li>
+                        <li><span>DEVS/ FRONT-END</span><br>I built a front-end for a restaurant with HTML, CSS, Bootstrap, JavaScript.</li>
                     </ul>
                 </div>
                 <div class="tab-contents" id="education">
                     <ul>
-                        <li><span>Devs/Django</span><br>Creacion de APIS REST</li>
-                        <li><span>Web Developer</span><br>Web app Development</li>
-                        <li><span>OOOOOOOOO</span><br>Bulding web apps</li>
+                        <li><span>CENTRO INCA /2020-2023</span><br>aux. sistemas informaticos</li>
+                        <li><span>OpenBootamp</span><br>Web Developer FULLSTACK</li>
+                        <li><span>Udemy</span><br>React: De cero a experto ( Hooks y MERN )<br>Coach: Fernando Herrera</li>
                     </ul>
                 </div>
             </div>
@@ -79,89 +80,84 @@
 <div id="skills">
     <div class="container">
         <h1 class="sub-title sub2">Skills</h1>
-        <!-- <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero corrupti iusto sit alias quod illo. Facere culpa iste sit necessitatibus nulla obcaecati, neque mollitia dicta tenetur vel, modi consectetur. Doloremque.</p>  -->
     </div>
     <div class="list-icons">
-        <a href=""><img src="icons/html-5.png" class="logos"></a>
-        <a href=""><img src="icons/css-3 (1).png" class="logos"></a>
-        <a href=""><img src="icons/js.png" class="logos"></a>
-        <a href=""><img src="icons/sql-server.png" class="logos"></a>
-        <a href=""><img src="icons/icons8-git.svg" class="logos"></a>
-        <a href=""><img src="icons/python (1).png" class="logos"></a>
-        <a href=""><img src="icons/icons8-django.svg" class="logos"></a>
-        <a href=""><img src="icons/icons8-postgresql-144.svg" class="logos "></a>
-        <a href=""><img src="icons/icons8-logo-de-mysql.svg" class="logos "></a>
-        <a href=""><img src="icons/icons8-mongodb-a-cross-platform-document-oriented-database-program-96.png" class="logos "></a>
-        </ul>
-    </div>
-</div>
+        <a href="#api"><img src="icons/html-5.png" class="logos" title="HTML"></a>
+        <a href="#api"><img src="icons/css-3 (1).png" class="logos" title="CSS"></a>
+        <a href="#api"><img src="icons/js.png" class="logos" title="JavaScript"></a>
+        <a href="#api"><img src="icons/sql-server.png" class="logos" title="SQL"></a>
+        <a href="#api"><img src="icons/icons8-git.svg" class="logos" title="GIT"></a>
+        <a href="#api"><img src="icons/python (1).png" class="logos" title="Python"></a>
+        <a href="#api"><img src="icons/icons8-django.svg" class="logos" title="Django"></a>
+        <a href="#api"><img src="icons/icons8-postgresql-144.svg" class="logos" title="PostgreSQL"></a>
+        <a href="#api"><img src="icons/icons8-logo-de-mysql.svg" class="logos" title="MySQL"></a>
+        <a href="#api"><img src="icons/icons8-mongodb-a-cross-platform-document-oriented-database-program-96.png" class="logos " title="MongoDB"></a>
+        <a href="#api"><img src="icons/icons8-oreja.svg" class="logos" title="Bootstrap"></a>
+        <a href="#api"><img src="icons/junit5-logo.png" class="logos" title="JUnit5"></a>
+    </div>  
+</div> 
+<p class="p2 sub3"><span>And in the future there will be more...</span></p>
 <!-- ----------------services------------------- -->
 
 <div id="services">
     <div class="container">
-        <h1 class="sub-title">My Services</h1>
+        <h1 class="sub-title sub3">My Services</h1>
         <div class="services-list">
             <div>
                 <i class="fas fa-code"></i>
-                <h2>Web Design</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore fugiat, totam rem numquam 
-                porro reprehenderit nulla blanditiis adipisci ratione! Molestiae magni dolores sed magnam illo 
-                aperiam corporis nisi aliquam soluta.</p>
-                <a href="#">learn more</a>
+                <h2>Back-End Developer</h2>
+                <p>I can develop server side projects, elaborating the business logic, unit tests, token authentication, establish connections between backend and frontend APIS.</p>
+                <a href="#api">learn more</a>
             </div>
             <div>
                 <i class="fas fa-crop-alt"></i>
-                <h2>App Design</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore fugiat, totam rem numquam 
-                porro reprehenderit nulla blanditiis adipisci ratione! Molestiae magni dolores sed magnam illo 
-                aperiam corporis nisi aliquam soluta.</p>                
-                <a href="#">learn more</a>
+                <h2>Front-End Developer</h2>
+                <p>I can create projects applying HTML, CSS, JS, Bootstrap, Django, React and unit tests.</p>                
+                <a href="#api">learn more</a>
             </div>
             <div>
                 <i class="fas fa-database"></i>
-                <h2>API REST</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore fugiat, totam rem numquam 
-                porro reprehenderit nulla blanditiis adipisci ratione! Molestiae magni dolores sed magnam illo 
-                aperiam corporis nisi aliquam soluta.</p>
-                <a href="#">learn more</a>
+                <h2>Datebase Developer</h2>
+                <p>I can build and support databases, using the best possible programming practices resulting in clean code.</p>
+                <a href="#api">learn more</a>
             </div>
         </div>
     </div>
 </div>
 <!-- ----------------portfolio------------------- -->
 <div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title">My Work</h1>
+    <div class="container" id="api">
+        <h1 class="sub-title sub3">My Work</h1>
         <div class="work-list">
-            <div class="work">
-                <img src="images/work-1.png">
-                <div class="layer">
-                    <h3>Social Media App</h3>
+            <div class="work" >
+                <img src="images/Screenshot_34png.png">
+                <div class="layer" >
+                    <h3>Market site App</h3>
                     <p>the app connects you yo the talented poeple around the world
                     Download it from play store.</p>
-                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    <a href="https://dj-market.herokuapp.com/"><i class="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
             <div class="work">
                 <img src="images/work-2.png">
                 <div class="layer">
-                    <h3>MarketSite App</h3>
+                    <h3>API Marsite PRO</h3>
                     <p>the app connects you yo the talented poeple around the world
                     Download it from play store.</p>
-                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    <a href="https://api-marketsite.herokuapp.com/"><i class="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
             <div class="work">
-                <img src="images/work-3.png">
+                <img src="images/Screenshot_3.png">
                 <div class="layer">
-                    <h3>Online Shopping App</h3>
+                    <h3>Restaurant-Website</h3>
                     <p>the app connects you yo the talented poeple around the world
                     Download it from play store.</p>
-                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    <a href="https://santiago0005.github.io/Restaurant-Website/"><i class="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
         </div>
-        <a href="" download class="btn a">See more</a>
+        <a href="" class="btn a">See more</a>
     </div>
 </div>
 
@@ -170,7 +166,7 @@
     <div class="container">
         <div class="row">
             <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
+                <h1 class="sub-title sub3">Contact Me</h1>
                 <p><i class="fas fa-paper-plane"></i>cifuentess938@gmail.com</p>
                 <p><i class="fas fa-phone-square-alt"></i>+57 3042586103</p>
                 <div class="social-icons">
@@ -179,7 +175,7 @@
                     <a href=""><i class="fa fa-instagram"></i></a>
                     <a href=""><i class="fa fa-linkedin"></i></a>
                 </div>
-                <a href="" class="btn btn2">Download CV</a>
+                <a href="images/" download class="btn btn2">Download CV</a>
             </div>
             <div class="contact-right">
                 <form action="https://sheetdb.io/api/v1/r6uy6nzfp0ykq" method="post" id="sheetdb-form">
@@ -193,7 +189,8 @@
         </div>
     </div>
     <div class="copyright">
-        <p>Copyright Santiago.<i class="fas fa-heart"></i></p>
+        <p>Copyright Santiago.<i class="fas fa-heart"></i><br><br>
+            <a target="_blank" href="https://icons8.com/icon/qULYrKvr-AFH/django">Django</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></p>
     </div>
 </div>
 <div class="scrol"></div>

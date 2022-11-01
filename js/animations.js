@@ -7,10 +7,14 @@
         // TO
 
         // gsap.to('.header', {
-        //     duration: 2,
-        //     x:-20, 
+        //     duration: 4,
+        //      x: 100
         // });
-        // OBJECT
+        // gsap.from('.header', {
+        //     duration: 2,
+        //     x: 0  
+        // });
+        OBJECT
 
         // let object = { value: 100 };
         // gsap.to(object, {

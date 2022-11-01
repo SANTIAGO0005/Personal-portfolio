@@ -97,9 +97,10 @@ nav .menu li a{
     font-size: 60px;
     margin-top: 20px;
 }
-.header-text h1 span{
+span{
     color: #00fff5;
 }
+
 .scrol{
     height: 50px;
 }
@@ -163,7 +164,7 @@ nav .menu li a{
 }
 .tab-contents ul li span{
     color: #00fff5;
-    font-size: 14px;
+    font-size: 15px;
 }
 .tab-contents{
     display: none;
@@ -215,6 +216,16 @@ nav .menu li a{
 .list-icons a .logos:hover{
     transform: translateY(-12px)
 }
+.p2{
+    margin-top: -50px;
+    margin-bottom: 100px;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 /* -----------services----------- */
 #services{
@@ -501,6 +512,9 @@ nav .fas{
     }
     .btn.a{
         margin-left: 65px;
+    }
+    .p2{
+        font-size: 18px;
     }
 }
 #msg{
