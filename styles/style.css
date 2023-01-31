@@ -20,7 +20,7 @@ body{
     
 }
 .header{
-    background-image: url(../myBackground/background1.png);
+    background-image: url(../myBackground/background1.webp);
     background-size: cover;
     background-attachment: fixed;
     z-index: 8;
@@ -209,6 +209,18 @@ span{
     font-weight: 100;
     width: 85px;
     height: 85px;
+}
+.logos.logo-react{
+    width: 100px;
+    height: 100px;
+}
+.logos.logo-node{
+    width: 95px;
+    height: 95px;
+}
+.logos.logo-redux{
+    width: 90px;
+    height: 90px;
 }
 .list-icons a .logos{
     transition: transform 0.3s;
@@ -426,7 +438,7 @@ nav .fas{
 
 @media screen and (max-width: 600px){
     #header{
-        background-image: url(../myBackground/phone-background1.png);
+        background-image: url(../myBackground/phone-background1.webp);
     }
     .header-text{
         margin-top: 100%;
