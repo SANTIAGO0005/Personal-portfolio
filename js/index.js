@@ -97,5 +97,5 @@ window.sr =ScrollReveal();
             // origin:'bottom',
             // // distance: '-20px'
         });
-    },1000);
+    },500);
     
