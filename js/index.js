@@ -1,23 +1,23 @@
 window.sr =ScrollReveal();
     setTimeout(()=>{
-        sr.reveal('#header',{
+        sr.reveal('.header',{
             duration: 2000,
         });
     
         // ************Animations nav*************
         sr.reveal('.logo',{
-            duration: 2500,
+            duration: 2300,
             origin:'bottom',
             distance: '-100px'
         });
         sr.reveal('.menu',{
-            duration: 2500,
+            duration: 2300,
             origin:'bottom',
             distance: '-100px'
         });
     
         sr.reveal('.header-text',{
-            duration: 2500,
+            duration: 2300,
             origin:'left',
             distance: '-100px'
         });

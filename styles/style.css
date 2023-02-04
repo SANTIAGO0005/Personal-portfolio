@@ -16,20 +16,16 @@ html, body {
     width: 100%!important;
     overflow-x: hidden!important;
 }
+.header{
+    background: url(../myBackground/background1.webp) repeat fixed 100%;
+    background-size: cover;
+    z-index: 99;
+}
 #header{
     visibility: hidden;
     width: 100%;
     height: 100vh;
     
-}
-.header{
-    background-image: url(../myBackground/background1.webp);
-    background-size: cover;
-    background-attachment: fixed;
-    z-index: 99;
-    background-repeat: no-repeat;
-    background-position: center;
-    max-width: 100%;
 }
 .container{
     padding: 10px 10%;
@@ -385,7 +381,7 @@ span{
 
 /* ----------contact----------- */
 #contact{
-    padding: 70px 0
+    padding: 0px 0
 }
 .contact-left{
     visibility: hidden;
@@ -464,7 +460,7 @@ nav .fas{
 }
 
 @media screen and (max-width: 600px){
-    #header{
+    .header{
         background-image: url(../myBackground/phone-background1.webp);
     }
     .header-text{
