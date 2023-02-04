@@ -17,6 +17,7 @@ html, body {
     overflow-x: hidden!important;
 }
 .header{
+    visibility: hidden;
     background: url(../myBackground/background1.webp) repeat fixed 100%;
     background-size: cover;
     z-index: 99;
@@ -461,7 +462,8 @@ nav .fas{
 
 @media screen and (max-width: 600px){
     .header{
-        background-image: url(../myBackground/phone-background1.webp);
+        background: url(../myBackground/phone-background1.webp) repeat fixed 100%;
+        background-size: cover;
     }
     .header-text{
         margin-top: 100%;
