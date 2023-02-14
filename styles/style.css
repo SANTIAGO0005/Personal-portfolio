@@ -20,7 +20,8 @@ html, body {
     background-image: url('../myBackground/background1.webp');
     background-attachment: fixed;
     background-position: center;
-    background-size: cover;
+    background-size: 100vw auto;
+    background-repeat: no-repeat;
 }
 #header{
     width: 100%;
@@ -460,11 +461,11 @@ nav .fas{
 
 @media screen and (max-width: 600px){
     .header{
-        background-image: url('../myBackground/phone-background1.webp') ;
+        background-image: url('../myBackground/phone-background1.webp');
     }
-    #header{
+    /* #header{
         height: 100dvh;
-    }
+    } */
     .header-text{
         margin-top: 100%;
         font-size: 16px;
